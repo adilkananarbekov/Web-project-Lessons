@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #00aaff;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .form-container {
+      background-color: white;
+      border-radius: 10px;
+      padding: 30px;
+      width: 400px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .logo img {
+      max-width: 150px;
+    }
+    .form-container h2 {
+      text-align: center;
+      color: #007bbd;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: #333;
+    }
+    .form-group input, .form-group select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      font-size: 14px;
+      padding: 10px 10px 10px 10px;
+    }
+    .form-group select {
+      background-position-x: calc(100% -8px);
+    }
+    .row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+    }
+    .submit-btn {
+      background-color: #1a34c3;
+      color: white;
+      padding: 12px;
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .submit-btn:hover {
+      background-color: #005f99;
+    }
+    .terms {
+      margin-top: 10px;
+      font-size: 12px;
+      text-align: center;
+      color: #666;
+    }
+    .terms a {
+      color: #007bbd;
+      text-decoration: none;
+    }
+    .terms a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="form-container">
+      <div class="logo">
+        <img src="cropped-ALATOO-LOGO-2-2048x2048.png" alt="Logo">
+      </div>
+      <h2>Sign up for your free account</h2>
+      <p style="text-align: center; color: #666;">Use all Ala-Too features for free, forever!</p>
+      
+      <form>
+        <div class="row">
+          <div class="form-group">
+            <input id="first-name" type="text" placeholder="First name">
+          </div>
+          <div class="form-group">
+            <input id="last-name" type="text" placeholder="Last name">
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group">
+            <input id="email" type="email" placeholder="Your email">
+          </div>
+          <div class="form-group">
+            <input id="password" type="password" placeholder="Set a password">
+          </div>
+        </div>
+        <div class="form-group">
+          <select id="referral" >
+            <option value="" hidden>How did you first hear about Ala-Too?</option>
+            <option value="social_media">Social Media</option>
+            <option value="friend">Friend</option>
+            <option value="ads">Ads</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <button type="submit" class="submit-btn">Create account</button>
+      </form>
+
+      <div class="terms">
+        By clicking this button, you agree to our <a href="#">Terms of Service</a>.
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
